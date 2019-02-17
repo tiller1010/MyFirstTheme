@@ -13,3 +13,11 @@ add_action('wp_enqueue_scripts','load_styles');
 	}
 
 add_action('wp_enqueue_scripts','load_scripts');
+
+add_theme_support('menus');
+
+register_nav_menus(
+	array(
+		'top-menu' => __('Top Menu','theme'),
+	)
+);
