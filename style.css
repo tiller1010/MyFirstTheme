@@ -5,10 +5,18 @@ Author: Tyler Trout
 Version: 1.0
 */
 
+.mainHeader{
+	margin-bottom: 100px;
+}
+
 #mainNavigation{
 	background: #ccc;
-	position: relative;
+	position: fixed;
+	width:100%;
 	top:0px;
+	left:0px;
+	z-index: 5;
+
 }
 
 nav li{
@@ -22,6 +30,32 @@ h1,h3{
 }
 
 p{
-	margin:10px 300px 10px 300px;
+	margin:10px 20% 10px 20%;
 	text-align: center;
+}
+
+.postContainer{
+	border:solid black;
+	margin:0 auto;
+	padding:0 20%;
+}
+
+.postImage{
+	position: relative;
+	left:30%;
+}
+.postContainer a{
+	float:right;
+	position: relative;
+	bottom:25px;
+}
+
+@media only screen and (max-width: 800px){
+	.postContainer{
+		padding:0 5%;
+	}
+
+	.postImage{
+		left:5%;
+	}
 }
