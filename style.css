@@ -4,3 +4,24 @@ Description: My first attempt at WordPress themes
 Author: Tyler Trout
 Version: 1.0
 */
+
+#mainNavigation{
+	background: #ccc;
+	position: relative;
+	top:0px;
+}
+
+nav li{
+	display: inline-block;
+	margin:10px;
+}
+
+h1,h3{
+	text-indent: 100px;
+	font-style: italic;
+}
+
+p{
+	margin:10px 300px 10px 300px;
+	text-align: center;
+}

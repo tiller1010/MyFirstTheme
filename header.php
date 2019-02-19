@@ -6,9 +6,11 @@
 <body <?php body_class();?>>
 
 <header class='mainHeader'>
-	<?php wp_nav_menu(
-		array(
-			'menu' => 'top-menu',
-		)
-	);?>
+	<nav id='mainNavigation'>
+		<?php wp_nav_menu(
+			array(
+				'menu' => 'top-menu',
+			)
+		);?>
+	</nav>
 </header>
