@@ -89,6 +89,12 @@ nav li a:hover{
 	margin-bottom: 25px;
 }
 
+.comments-area{
+	margin-top: 40px;
+	margin-left: 10%;
+}
+
+
 @media only screen and (max-width: 800px){
 	nav li{
 		font-size: 13px;
@@ -120,6 +126,10 @@ nav li a:hover{
 		width:380px;
 		margin-left: 30px;
 		margin-bottom: 25px;
+	}
+
+	.comments-area{
+		margin-left: 0px;
 	}
 }
 
