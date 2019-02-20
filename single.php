@@ -12,6 +12,10 @@
 
 		<?php the_content();?>
 
+	<?php if(comments_open()) :
+		comments_template();
+	endif;?>
+
 	<?php endwhile; endif;?>
 </div>
 
