@@ -5,6 +5,10 @@ Author: Tyler Trout
 Version: 1.0
 */
 
+body{
+	font-family: arial;
+}
+
 .mainHeader{
 	margin-bottom: 100px;
 }
@@ -16,46 +20,118 @@ Version: 1.0
 	top:0px;
 	left:0px;
 	z-index: 5;
-
 }
 
 nav li{
 	display: inline-block;
+	position: relative;
 	margin:10px;
+	font-size: 19px;
+	height:100%;
+	font-family: 'Arial Black';
+}
+nav li:hover{
+	text-decoration: underline;
+}
+nav li a{
+	text-decoration: none;
+	color: #07d;
+}
+nav li a:hover{
+	color:white;
 }
 
-h1,h3{
-	text-indent: 100px;
-	font-style: italic;
+.siteTitle{
+	font-size: 45px;
+	font-family: "Francois One", Helvetica, sans-serif;
+	text-indent: 15%
 }
 
-p{
-	margin:10px 20% 10px 20%;
-	text-align: center;
+.siteDescription{
+	text-indent: 25%;
+}
+
+.headerLine{
+	margin-bottom: 70px;
+}
+
+.pageTitle{
+	font-family: "Francois One", Helvetica, sans-serif;
+	text-indent: 15%;
+}
+
+.pageContent{
+	margin:0 10%;
+	text-indent: 20px;
 }
 
 .postContainer{
 	border:solid black;
-	margin:0 auto;
-	padding:0 20%;
+	margin:10px 20%;
+	padding:0 10%;
 }
 
-.postImage{
-	position: relative;
-	left:30%;
-}
 .postContainer a{
-	float:right;
 	position: relative;
-	bottom:25px;
+	margin-top: 100px;
+	bottom:7px;
+	left:80%;
+}
+
+.singlePostContent{
+	margin:0 6%;
+	text-indent: 20px;
+}
+
+.singlePostImage{
+	float:right;
+	margin-left: 25px;
+	margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 800px){
+	nav li{
+		font-size: 13px;
+		margin:0px 7px 0px 0px;
+	}
+
+	.siteTitle{
+		font-size: 28px;
+	}
+
+	.siteDescription{
+		font-size: 15px;
+	}
+
 	.postContainer{
+		margin:10px 1%;
 		padding:0 5%;
 	}
 
 	.postImage{
-		left:5%;
+		width:130px;
+	}
+
+	.postContainer a{
+		left:65%;
+	}
+
+	.singlePostImage{
+		width:380px;
+		margin-left: 30px;
+		margin-bottom: 25px;
+	}
+}
+
+@media only screen and (max-width: 670px){
+	.singlePostImage{
+		margin-left: 100%;
+		margin-right:13%;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	.singlePostImage{
+		margin-right:0px;
 	}
 }

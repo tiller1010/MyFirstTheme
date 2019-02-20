@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 	<?php wp_head();?>
 </head>
 <body <?php body_class();?>>
